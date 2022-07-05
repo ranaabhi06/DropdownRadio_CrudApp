@@ -15,7 +15,7 @@ function Submit(props) {
         
         
         // postDB(event);
-        window.location.reload();
+        // window.location.reload();
       }}
     />
   </form>
