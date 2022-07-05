@@ -1,8 +1,20 @@
 import React from 'react'
 
-function Records() {
+
+function Records(props) {
+
+const { dbData } = props.values;
+console.log(dbData);
+
+
+
+
   return (
-    <div>Records</div>
+    <div>
+    
+    <p>Records</p>
+    <p> {dbData}</p>
+    </div>
   )
 }
 
