@@ -20,6 +20,7 @@ function App() {
     setRadioPersonFinal(radioPersonData);
     
   };
+
   const checkboxValueAccept = (checkboxData) => {
     setCheckboxFinal(checkboxData);
    
