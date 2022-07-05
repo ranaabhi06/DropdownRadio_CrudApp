@@ -4,12 +4,11 @@ const [textbox, setTextbox] = useState({
     name: "",
     companyName: ""
 });
-const nameHandler = e => {
-    setTextbox([...textbox,textbox.name]);
+const onInputChange = e => {
+    setTextbox({...textbox,[e.target.name]: e.target.value});
 }
-const companyNameHandler = e => {
-    setTextbox([...textbox,textbox.companyName])
-}
+
+console.log(textbox);
 
     return (
         <>
@@ -17,18 +16,18 @@ const companyNameHandler = e => {
             <table>
                 <tr>
                     <td>
-                        <label htmlFor="">Name</label>
+                        <label htmlFor="name">Name</label>
                     </td>
                     <td>
-                        <input type="text" name="name" placeholder="Enter your full name" value={textbox.name} onChange={e => {nameHandler(e)}}/>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" value={textbox.name} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label htmlFor=""> Organisation</label>
+                        <label htmlFor="companyName"> Organisation</label>
                     </td>
                     <td>
-                        <input type="text" name="company name" placeholder="Enter your company name" value={textbox.companyName} onChange={e => {companyNameHandler(e)}}/>
+                        <input type="text" id="companyName" name="companyName" placeholder="Enter your company name" value={textbox.companyName} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
             </table>
