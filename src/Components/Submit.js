@@ -1,7 +1,22 @@
-import React from 'react';
-import url from "../"
+import React,{useState} from "react";
+import axios from "axios";
 
-function Submit(props) {
+function Submit() {
+
+  
+
+  const postToDB = async () => {
+    // axios.get("http://localhost:5000/data").then((res) => {
+    //   setDbData(res.data);
+    // });
+
+   await axios.post("http://localhost:5003/data", {
+   
+      id: "IC" + Math.trunc(Math.random() * 99),
+    });
+  };
+  console.log(postToDB());
+
   return (
     <form>
   
@@ -14,7 +29,7 @@ function Submit(props) {
         event.preventDefault();
         
         
-        // postDB(event);
+        postToDB();
         window.location.reload();
       }}
     />
@@ -22,4 +37,4 @@ function Submit(props) {
   )
 }
 
-export default Submit
+export default Submit;
