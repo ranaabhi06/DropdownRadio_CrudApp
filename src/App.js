@@ -1,6 +1,6 @@
 import React from "react";
 import Dropdown from "./Components/Dropdown/Dropdown";
-import Submit from "./Submit";
+import Submit from "./Components/Submit";
 
 function App() {
   return (

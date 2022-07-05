@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import url from "../"
 
-function Submit() {
+function Submit(props) {
+  return (
     <form>
   
     <input
@@ -11,19 +13,13 @@ function Submit() {
       onClick={(event) => {
         event.preventDefault();
         
-        // props.clearForm();
-        // props.onFormSubmit(event);
-        // props.onFormSubmit1(event);
-        // props.onFormSubmit2(event);
-        // props.onFormSubmit3(event);
-        // props.onFinSubmit(event);
-
-        // props.getDb();
-        props.postDB(event);
+        
+        postDB(event);
         window.location.reload();
       }}
     />
   </form>
+  )
 }
 
 export default Submit
