@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const Textbox = () => {
+const Textbox = (props) => {
 const [textbox, setTextbox] = useState({
     name: "",
     companyName: ""
@@ -8,7 +8,7 @@ const onInputChange = e => {
     setTextbox({...textbox,[e.target.name]: e.target.value});
 }
 
-console.log(textbox);
+props.text(textbox);
 
     return (
         <>
