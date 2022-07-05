@@ -18,25 +18,37 @@ function Submit(props) {
       id: "IC" + Math.trunc(Math.random() * 99),
     });
   };
-  // console.log(postToDB());
-
-  return (
-    <form>
+ console.log(props.values)
+  // const[toDataB,setToDataB]=useState([])
   
-    <input
-    required={true}
-      type="submit"
-      value="Submit"
-      style={{align:"center",padding:"5px",margin:"10px 0px 0px 40rem",color:"white",background:"blue"}}
-      onClick={(event) => {
-        event.preventDefault();
-        
-        
-        postToDB();
-        window.location.reload();
-      }}
-    />
-  </form>
+
+  const postToDB = async (finaldata) => {
+   
+
+   await axios.post("http://localhost:5003/data", {
+      // ..finalData
+      id: "IC" + Math.trunc(Math.random() * 99),
+    });
+  };
+  console.log(postToDB());
+
+const submitHandler = e => {
+  console.log("hello");
+}
+const saveHandler = (e) =>{
+  e.preventDefault();
+console.log(props.values);
+} 
+  return (
+    <>
+    {/* <form onSubmit={e => submitHandler (e)}>
+      <button type = "submit" onClick={e => {saveHandler(e)}}>save</button>
+    </form> */}
+    <form onSubmit={e => submitHandler(e)}>
+    <button type="submit" onClick={e => saveHandler(e)}  >Save</button>
+    </form>
+    </>
+    
   )
 }
 

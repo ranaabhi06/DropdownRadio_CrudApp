@@ -7,34 +7,35 @@ import CheckBox from "./Components/CheckBox/CheckBox";
 import Radio from "./Components/Radio/Radio";
 import Submit from "./Components/Submit";
 
-
-
-
 function App() {
- 
- const ddToApp=(data)=>{
-console.log(data)
- }
+  const ddToApp = (data) => {
+    console.log(data);
+  };
 
-console.log(ddToApp);
-const setddToSubmit=()=>{
-  ddToApp();
-}
-console.log(setddToSubmit)
+  console.log(ddToApp);
+  const setddToSubmit = () => {
+    ddToApp();
+  };
+  console.log(setddToSubmit);
 
-
-
+  let [date, setDate] = useState("");
+  const dat = (dat) => {
+    setDate(dat);
+  };
+  let [text, setText] = useState("");
+  const txt = (enteredText) => {
+    setText(enteredText);
+  };
+  let data = { date, text };
+  // console.log(data);
   return (
     <div className="App">
-      <Textbox />
-      <Datepicker />
+      <Textbox text={txt} />
+      <Datepicker det={dat} />
       <Radio />
       <CheckBox />
       <Dropdown setDdToApp={ddToApp} />
-
-
-
-      <Submit  setddToSubmit={setddToSubmit}/>
+      <Submit values={data} />
     </div>
   );
 }
