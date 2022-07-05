@@ -4,31 +4,29 @@ const [datepicker, setDatepicker] = useState({
     dob: "",
     doj: ""
 });
-const dobHandler = e => {
-    setDatepicker([...datepicker,datepicker.dob]);
-}
-const dojHandler = e => {
-    setDatepicker([...datepicker,datepicker.doj])
+const onInputChange = e => {
+    setDatepicker({...datepicker,[e.target.name]: e.target.value});
 }
 
+console.log(datepicker);
     return (
         <>
         <form>
             <table>
                 <tr>
                     <td>
-                        <label htmlFor="">Date of Birth</label>
+                        <label htmlFor="dob">Date of Birth</label>
                     </td>
                     <td>
-                        <input type="date" name="dateOfBirth"  onChange={e => {dobHandler(e)}}/>
+                        <input type="date" name="dob" id="dob" value={datepicker.dob}  onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label htmlFor="">Date of Joining</label>
+                        <label htmlFor="doj">Date of Joining</label>
                     </td>
                     <td>
-                        <input type="date" name="dateOfJoining"  onChange={e => {dojHandler(e)}}/>
+                        <input type="date" name="doj" value={datepicker.doj} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
             </table>
