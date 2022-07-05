@@ -32,16 +32,16 @@ function Dropdown() {
 
 
 //app.js
-  const [formValues, setDepartment] = useState({});
-  const [desValue, setDesignation] = useState({});
+  const [department, setDepartment] = useState({});
+  const [designation, setDesignation] = useState({});
   const [stateValue, setStateValue] = useState({});
   const [districtValue, setDistValue] = useState({});
 
 
 
   const [finalData, setFinalData] = useState({
-    formValues: [],
-    desValue: [],
+    department: [],
+    designation: [],
     stateValue: [],
     districtValue: [],
    
@@ -50,30 +50,32 @@ function Dropdown() {
   useEffect(() => {
     setFinalData({
       ...finalData,
-      formValues,
-      desValue,
+      department,
+      designation,
       stateValue,
       districtValue,
      
     });
-  }, [formValues, desValue, stateValue, districtValue]);
+  }, [department, designation, stateValue, districtValue]);
+
+  console.log(finalData)
 
 
   const handleDepartment = (selected) => {
-    // console.log(selected);
+    console.log(selected);
     setDepartment({ department: selected });
   };
   const handleDesignation = (selected) => {
-    // console.log(selected);
+    console.log(selected);
     setDesignation({ designation: selected });
   };
 
   const handleState = (selectedState) => {
-    // console.log(selectedState);
+    console.log(selectedState);
     setStateValue({ States: selectedState });
   };
   const handleDistrict = (districtValue) => {
-    // console.log(districtValue);
+    console.log(districtValue);
     setDistValue({ districts: districtValue });
   };
 
