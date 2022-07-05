@@ -8,6 +8,7 @@ import Textbox from "./Components/Textbox/Textbox";
 import CheckBox from "./Components/CheckBox/CheckBox";
 import Radio from "./Components/Radio/Radio";
 import Submit from "./Components/Submit";
+import Records from "./Components/Records/Records";
 
 function App() {
   const[dropdownData,setDropdowndata]=useState([]);
@@ -52,6 +53,17 @@ function App() {
   };
   let data = { date, text ,dropdownData,radioGenderFinal,radioPersonFinal,checkboxFinal};
   // console.log(data);
+
+const[dataFormSubmit,setDataFromSubmit]=useState({})  
+const acceptDataFromSub=(d)=>{
+setDataFromSubmit(d)
+console.log(dataFormSubmit)
+}
+
+//records
+
+
+
   return (
     <div className="App">
       <Textbox text={txt} />
@@ -60,8 +72,7 @@ function App() {
     
       <CheckBox accepCheckboxData={checkboxValueAccept} />
       <Dropdown setDdToApp={ddToApp} />
-      <Submit values={data} />
-
+      <Submit values={data}  acceptDataFromSub={acceptDataFromSub}/>
   
   
     </div>
