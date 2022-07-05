@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const Datepicker = () => {
+const Datepicker = (props) => {
 const [datepicker, setDatepicker] = useState({
     dob: "",
     doj: ""
@@ -8,7 +8,7 @@ const onInputChange = e => {
     setDatepicker({...datepicker,[e.target.name]: e.target.value});
 }
 
-console.log(datepicker);
+props.det(datepicker);
     return (
         <>
         <form>
