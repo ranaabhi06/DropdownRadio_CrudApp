@@ -10,10 +10,15 @@ import Radio from "./Components/Radio/Radio";
 import Submit from "./Components/Submit";
 
 function App() {
+  const[dropdownData,setDropdowndata]=useState([]);
+
 
   const [radioGenderFinal, setRadioGenderFinal] = useState({});
   const [radioPersonFinal, setRadioPersonFinal] = useState({});
   const [checkboxFinal, setCheckboxFinal] = useState({});
+  // console.log(radioGenderFinal)
+  // console.log(radioPersonFinal)
+  // console.log(checkboxFinal)
 
   const radioGenderValueAccept = (radioGenderData) => {
     setRadioGenderFinal(radioGenderData);
@@ -29,14 +34,13 @@ function App() {
    
   };
   const ddToApp = (data) => {
+    setDropdowndata(data);
     console.log(data);
   };
 
-  console.log(ddToApp);
-  const setddToSubmit = () => {
-    ddToApp();
-  };
-  console.log(setddToSubmit);
+  // console.log(dropdownData);
+
+  
 
   let [date, setDate] = useState("");
   const dat = (dat) => {
@@ -46,8 +50,8 @@ function App() {
   const txt = (enteredText) => {
     setText(enteredText);
   };
-  let data = { date, text };
-
+  let data = { date, text ,dropdownData,radioGenderFinal,radioPersonFinal,checkboxFinal};
+  // console.log(data);
   return (
     <div className="App">
       <Textbox text={txt} />
@@ -56,7 +60,7 @@ function App() {
     
       <CheckBox accepCheckboxData={checkboxValueAccept} />
       <Dropdown setDdToApp={ddToApp} />
-      <Submit values={data}  radioG={radioGenderFinal} radioP={radioPersonFinal} checkboxD={checkboxFinal} />
+      <Submit values={data} />
 
   
   
