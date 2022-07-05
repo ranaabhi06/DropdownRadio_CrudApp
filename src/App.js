@@ -8,15 +8,16 @@ import Radio from "./Components/Radio/Radio";
 import Submit from "./Components/Submit";
 
 function App() {
+  const[dropdownData,setDropdowndata]=useState([]);
+
   const ddToApp = (data) => {
+    setDropdowndata(data);
     console.log(data);
   };
 
-  console.log(ddToApp);
-  const setddToSubmit = () => {
-    ddToApp();
-  };
-  console.log(setddToSubmit);
+  // console.log(dropdownData);
+
+  
 
   let [date, setDate] = useState("");
   const dat = (dat) => {
@@ -26,7 +27,7 @@ function App() {
   const txt = (enteredText) => {
     setText(enteredText);
   };
-  let data = { date, text };
+  let data = { date, text ,dropdownData};
   // console.log(data);
   return (
     <div className="App">
