@@ -14,7 +14,7 @@ function Submit(props) {
         event.preventDefault();
         
         
-        postDB(event);
+        // postDB(event);
         window.location.reload();
       }}
     />
