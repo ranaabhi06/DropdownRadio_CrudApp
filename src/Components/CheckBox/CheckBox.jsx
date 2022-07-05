@@ -1,38 +1,61 @@
-import React from 'react'
-import './checkbox.css'
+import React, { useState } from "react";
+import "./checkbox.css";
 const CheckBox = () => {
-  return (
-    <div>
-        <form action="">
-            <table>
-                <tr>
-                    <td className='checkboxCss'>
-                        <label htmlFor="">
-                        Intrested Language
-                        </label>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;
-                        <input type="checkbox" name="" id="" />React
-                        <input type="checkbox" name="" id="" />Python
-                        <input type="checkbox" name="" id="" />Java
-                    </td>
-                </tr>
-                <tr>
-                    <td className='checkboxCss'>
-                        <label htmlFor="">
-                        Have you vehicles
-                        </label>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;
-                        <input type="checkbox" name="" id="" />Bicyles
-                        <input type="checkbox" name="" id="" />Bike
-                        <input type="checkbox" name="" id="" />Car
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-  )
+  const [languageValue, setLanguageValue] = useState([]);
+  const [vehicleValue, setVehicleValue] = useState([]);
+const checkboxLanguageValue=(event)=>{
+if(event.target.checked){
+    let langArr=languageValue
+    langArr.push(event.target.value)
+    setLanguageValue(langArr)
+    console.log(languageValue)
+}
+}
+const checkboxVehicleValue=(event)=>{
+    if(event.target.checked){
+        let vehiArr=vehicleValue
+        vehiArr.push(event.target.value)
+        setVehicleValue(vehiArr)
+        console.log(vehicleValue)
+    }
 }
 
-export default CheckBox
+  return (
+    <div>
+      <form action="">
+        <table>
+          <tr>
+            <td className="checkboxCss">
+              <label htmlFor="">Intrested Language</label>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;
+              <input type="checkbox" name="" value='React'  onChange={(e)=>{checkboxLanguageValue(e)}} id="" />
+              React
+              <input type="checkbox" name="" value='Python'  onChange={(e)=>{checkboxLanguageValue(e)}}id="" />
+              Python
+              <input type="checkbox" name="" value='Java' onChange={(e)=>{checkboxLanguageValue(e)}} id="" />
+              Java
+            </td>
+          </tr>
+          <tr>
+            <td className="checkboxCss">
+              <label htmlFor="">Have you vehicles</label>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;
+              <input type="checkbox" name="" value='Bicycles'  onChange={(e)=>checkboxVehicleValue(e)} id="" />
+              Bicycles
+              <input type="checkbox" name="" value='Bike' onChange={(e)=>checkboxVehicleValue(e)}id="" />
+              Bike
+              <input type="checkbox" name="" value='Car' onChange={(e)=>checkboxVehicleValue(e)}id="" />
+              Car
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  );
+};
+
+export default CheckBox;
