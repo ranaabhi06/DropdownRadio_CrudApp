@@ -29,8 +29,13 @@ function Submit() {
         event.preventDefault();
         
         
+<<<<<<< HEAD
         postToDB();
         window.location.reload();
+=======
+        // postDB(event);
+        // window.location.reload();
+>>>>>>> 74397e8eaa40c670a0c02c9d5d7fd5b4e6895a69
       }}
     />
   </form>
