@@ -1,11 +1,43 @@
 {
   "data": [
+   
     {
-      "id": 1,
-      "department": "Digital",
-      "designation": "Get",
-      "state": "Uttar Pradesh",
-      "districts": "Hapur"
+      "id": "IC21",
+      "finalData": {
+        "date": {
+          "dob": "2022-07-20",
+          "doj": "2022-07-06"
+        },
+        "text": {
+          "name": "Abhishek Kumar",
+          "companyName": "ITS ENGINEERING COLLEGE"
+        },
+        "dropdownData": {
+          "department": {
+            "department": "Marketing"
+          },
+          "designation": {
+            "designation": "Engineer"
+          },
+          "stateValue": {
+            "selectedState": "Chhattisgarh"
+          },
+          "districtValue": {
+            "districtValue": "Bastar"
+          }
+        },
+        "radioGenderFinal": "Male",
+        "radioPersonFinal": "No",
+        "checkboxFinal": {
+          "language": [
+            "Python",
+            "React"
+          ],
+          "vehicle": [
+            "Bicycles"
+          ]
+        }
+      }
     }
   ]
 }
