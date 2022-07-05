@@ -1,4 +1,6 @@
+
 import React, { useEffect, useState } from "react";
+
 import Datepicker from "./Components/DatePicker/DatePicker";
 import Dropdown from "./Components/Dropdown/Dropdown";
 import Textbox from "./Components/Textbox/Textbox";
@@ -8,6 +10,7 @@ import Radio from "./Components/Radio/Radio";
 import Submit from "./Components/Submit";
 
 function App() {
+
   const [radioGenderFinal, setRadioGenderFinal] = useState({});
   const [radioPersonFinal, setRadioPersonFinal] = useState({});
   const [checkboxFinal, setCheckboxFinal] = useState({});
@@ -24,16 +27,38 @@ function App() {
     setCheckboxFinal(checkboxData);
    
   };
+  const ddToApp = (data) => {
+    console.log(data);
+  };
+
+  console.log(ddToApp);
+  const setddToSubmit = () => {
+    ddToApp();
+  };
+  console.log(setddToSubmit);
+
+  let [date, setDate] = useState("");
+  const dat = (dat) => {
+    setDate(dat);
+  };
+  let [text, setText] = useState("");
+  const txt = (enteredText) => {
+    setText(enteredText);
+  };
+  let data = { date, text };
 
   return (
     <div className="App">
-      <Textbox />
-      <Datepicker />
+      <Textbox text={txt} />
+      <Datepicker det={dat} />
       <Radio accepRadioGenderData={radioGenderValueAccept} accepRadioPersonData={radioPersonValueAccept} />
     
       <CheckBox accepCheckboxData={checkboxValueAccept} />
-      <Dropdown />
-      <Submit radioG={radioGenderFinal} radioP={radioPersonFinal} checkboxD={checkboxFinal} />
+      <Dropdown setDdToApp={ddToApp} />
+      <Submit values={data}  radioG={radioGenderFinal} radioP={radioPersonFinal} checkboxD={checkboxFinal} />
+
+  
+  
     </div>
   );
 }

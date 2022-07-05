@@ -9,7 +9,7 @@ import State from "../State.json";
 
 
 
-function Dropdown() {
+function Dropdown(props) {
 
   const [selectedState, setSelectedState] = useState("");
   const [selectedDistrict, setSelectedDistrict] = useState("");
@@ -27,6 +27,7 @@ function Dropdown() {
   useEffect(() => {
     getDistrict(selectedState);
     handleState(selectedState);
+    
   }, [selectedState]);
 
 
@@ -43,9 +44,14 @@ function Dropdown() {
     department: [],
     designation: [],
     stateValue: [],
-    districtValue: [],
+    districtValue: []
    
   });
+
+
+
+
+
 
   useEffect(() => {
     setFinalData({
@@ -60,23 +66,28 @@ function Dropdown() {
 
   console.log(finalData)
 
+  props.setDdToApp(finalData);
 
-  const handleDepartment = (selected) => {
-    console.log(selected);
-    setDepartment({ department: selected });
+ 
+  
+
+
+  const handleDepartment = (department) => {
+    console.log(department);
+    setDepartment({department });
   };
-  const handleDesignation = (selected) => {
-    console.log(selected);
-    setDesignation({ designation: selected });
+  const handleDesignation = (designation) => {
+    console.log(designation);
+    setDesignation({ designation });
   };
 
   const handleState = (selectedState) => {
     console.log(selectedState);
-    setStateValue({ States: selectedState });
+    setStateValue({selectedState });
   };
   const handleDistrict = (districtValue) => {
     console.log(districtValue);
-    setDistValue({ districts: districtValue });
+    setDistValue({districtValue });
   };
 
 
@@ -110,6 +121,7 @@ function Dropdown() {
                 value={selectedState}
                 onChange={(e) => {
                   setSelectedState(e.target.value);
+                  props.setDdToApp(finalData)
                 }}
                 id="test"
               >
