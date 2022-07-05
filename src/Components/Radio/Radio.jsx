@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import "./radio.css";
-const Radio = () => {
-  const [genderData, setGenderData] = useState("");
-  const [personData, setPersonData] = useState("");
-  const radioGenderValue = (event) => {
-    setGenderData(event.target.value);
+const Radio = (props) => {
+  const [genderData, setGenderData] = useState('');
+  const [personData, setPersonData] = useState([]);
+
+  const finalGenderValue = {
+    gender: genderData,
+    person: personData,
   };
-  console.log(genderData)
-  const radioPersonValue=(event)=>{
-    setPersonData(event.target.value)
-  }
-  console.log(personData)
+// console.log(finalGenderValue)
+  const radioGenderValue = (event) => {
+      props.accepRadioGenderData(event.target.value);
+      setGenderData(event.target.value);
+    };
+
+  const radioPersonValue = (event) => {
+      props.accepRadioPersonData(event.target.value)
+      setPersonData(event.target.value);
+  };
   return (
     <div>
       <table>
@@ -23,7 +30,7 @@ const Radio = () => {
               type="radio"
               name="gender"
               id=""
-              value='Male'
+              value="Male"
               onChange={(e) => {
                 radioGenderValue(e);
               }}
@@ -33,7 +40,7 @@ const Radio = () => {
               type="radio"
               name="gender"
               id=""
-              value='Female'
+              value="Female"
               onChange={(e) => {
                 radioGenderValue(e);
               }}
@@ -43,7 +50,7 @@ const Radio = () => {
               type="radio"
               name="gender"
               id=""
-              value='Other'
+              value="Other"
               onChange={(e) => {
                 radioGenderValue(e);
               }}
@@ -60,7 +67,7 @@ const Radio = () => {
               type="radio"
               name="person"
               id=""
-              value='Yes'
+              value="Yes"
               onChange={(e) => {
                 radioPersonValue(e);
               }}
@@ -70,7 +77,7 @@ const Radio = () => {
               type="radio"
               name="person"
               id=""
-              value='No'
+              value="No"
               onChange={(e) => {
                 radioPersonValue(e);
               }}
