@@ -1,20 +1,24 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import axios from "axios";
 
 function Submit(props) {
+
+  const[finalData,setFinalData]=useState([]);
+
+  //  setFinalData(props.setddToSubmit);
+
  
-  const[toDataB,setToDataB]=useState([])
   
 
-  const postToDB = async (finaldata) => {
+  const postToDB = async () => {
    
 
    await axios.post("http://localhost:5003/data", {
-      // ..finalData
+      ...finalData,
       id: "IC" + Math.trunc(Math.random() * 99),
     });
   };
-  console.log(postToDB());
+  // console.log(postToDB());
 
   return (
     <form>
