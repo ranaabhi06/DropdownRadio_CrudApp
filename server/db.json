@@ -39,290 +39,272 @@
       }
     },
     {
-      "id": "IC47",
+      "id": "IC48",
       "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
+        "date": {
+          "dob": "2022-07-13",
+          "doj": "2022-07-23"
+        },
+        "text": {
+          "name": "Abhishek Kumar",
+          "companyName": "ITS ENGINEERING COLLEGE"
+        },
+        "dropdownData": {
+          "department": {
+            "department": "QAG"
+          },
+          "designation": {
+            "designation": "Engineer"
+          },
+          "stateValue": {
+            "selectedState": "Goa"
+          },
+          "districtValue": {
+            "districtValue": "South Goa"
+          }
+        },
+        "radioGenderFinal": "Male",
+        "radioPersonFinal": "Yes",
+        "checkboxFinal": {
+          "language": [
+            "React",
+            "Python"
+          ],
+          "vehicle": [
+            "Bike",
+            "Bicycles"
+          ]
+        }
       }
     },
     {
-      "id": "IC6",
+      "id": "IC50",
       "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
+        "date": {
+          "dob": "",
+          "doj": ""
+        },
+        "text": {
+          "name": "",
+          "companyName": ""
+        },
+        "dropdownData": {
+          "department": {},
+          "designation": {},
+          "stateValue": {
+            "selectedState": "Delhi (NCT)"
+          },
+          "districtValue": {
+            "districtValue": "North Delhi"
+          }
+        },
+        "radioGenderFinal": [],
+        "radioPersonFinal": [],
+        "checkboxFinal": []
       }
     },
     {
-      "id": "IC43",
+      "id": "IC17",
       "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
+        "date": {
+          "dob": "2022-07-06",
+          "doj": "2022-06-27"
+        },
+        "text": {
+          "name": "Abhishek Kumar",
+          "companyName": "ITS ENGINEERING COLLEGE"
+        },
+        "dropdownData": {
+          "department": {
+            "department": "Digital"
+          },
+          "designation": {
+            "designation": "Graduate Trainee"
+          },
+          "stateValue": {
+            "selectedState": "Andhra Pradesh"
+          },
+          "districtValue": {
+            "districtValue": "Anantapur"
+          }
+        },
+        "radioGenderFinal": "Male",
+        "radioPersonFinal": "Yes",
+        "checkboxFinal": {
+          "language": [
+            "Python",
+            "React"
+          ],
+          "vehicle": [
+            "Bicycles",
+            "Bike"
+          ]
+        }
       }
     },
     {
-      "id": "IC10",
+      "id": "IC90",
       "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
+        "date": {
+          "dob": "2022-07-06",
+          "doj": "2022-06-27"
+        },
+        "text": {
+          "name": "Abhishek Kumar",
+          "companyName": "ITS ENGINEERING COLLEGE"
+        },
+        "dropdownData": {
+          "department": {
+            "department": "Digital"
+          },
+          "designation": {
+            "designation": "Graduate Trainee"
+          },
+          "stateValue": {
+            "selectedState": "Andhra Pradesh"
+          },
+          "districtValue": {
+            "districtValue": "Anantapur"
+          }
+        },
+        "radioGenderFinal": "Male",
+        "radioPersonFinal": "Yes",
+        "checkboxFinal": {
+          "language": [
+            "Python",
+            "React"
+          ],
+          "vehicle": [
+            "Bicycles",
+            "Bike"
+          ]
+        }
       }
     },
     {
-      "id": "IC46",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
+      "id": "IC13",
+      "date": {
+        "dob": "",
+        "doj": ""
+      },
+      "text": {
+        "name": "",
+        "companyName": ""
+      },
+      "dropdownData": {
+        "department": {},
+        "designation": {},
+        "stateValue": {
+          "selectedState": ""
+        },
+        "districtValue": {}
+      },
+      "radioGenderFinal": [],
+      "radioPersonFinal": [],
+      "checkboxFinal": []
+    },
+    {
+      "id": "IC15",
+      "date": {
+        "dob": "2022-07-20",
+        "doj": "2022-06-30"
+      },
+      "text": {
+        "name": "Abhishek Kumar",
+        "companyName": "ITS ENGINEERING COLLEGE"
+      },
+      "dropdownData": {
+        "department": {
+          "department": "Digital"
+        },
+        "designation": {
+          "designation": "Intern"
+        },
+        "stateValue": {
+          "selectedState": "Chandigarh (UT)"
+        },
+        "districtValue": {
+          "districtValue": "Chandigarh"
+        }
+      },
+      "radioGenderFinal": "Male",
+      "radioPersonFinal": "Yes",
+      "checkboxFinal": {
+        "language": [
+          "React",
+          "Python"
+        ],
+        "vehicle": [
+          "Bike",
+          "Bicycles"
+        ]
       }
     },
     {
-      "id": "IC82",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
+      "0": {
+        "dob": "",
+        "doj": ""
+      },
+      "1": {
+        "name": "",
+        "companyName": ""
+      },
+      "2": {
+        "department": {},
+        "designation": {},
+        "stateValue": {
+          "selectedState": ""
+        },
+        "districtValue": {}
+      },
+      "3": [],
+      "4": [],
+      "5": [],
+      "id": "IC92"
     },
     {
-      "id": "IC73",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
+      "0": {
+        "dob": "2022-07-26",
+        "doj": "2022-06-28"
+      },
+      "1": {
+        "name": "s",
+        "companyName": "w"
+      },
+      "2": {
+        "department": {},
+        "designation": {},
+        "stateValue": {
+          "selectedState": ""
+        },
+        "districtValue": {}
+      },
+      "3": [],
+      "4": [],
+      "5": [],
+      "id": "IC91"
     },
     {
-      "id": "IC11",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC55",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC92",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC12",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC74",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC35",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC70",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC54",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC89",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC79",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC59",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC24",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC7",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC85",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC56",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC26",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC64",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC77",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
-    },
-    {
-      "id": "IC78",
-      "finalData": {
-        "date": "",
-        "text": "",
-        "dropdownData": [],
-        "radioGenderFinal": {},
-        "radioPersonFinal": {},
-        "checkboxFinal": {}
-      }
+      "0": {
+        "dob": "",
+        "doj": ""
+      },
+      "1": {
+        "name": "",
+        "companyName": ""
+      },
+      "2": {
+        "department": {},
+        "designation": {},
+        "stateValue": {
+          "selectedState": ""
+        },
+        "districtValue": {}
+      },
+      "3": [],
+      "4": [],
+      "5": [],
+      "id": "IC78"
     }
   ]
 }

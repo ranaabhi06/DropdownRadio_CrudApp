@@ -1,21 +1,18 @@
-import React from 'react'
-
+import React from "react";
 
 function Records(props) {
-
-const { dbData } = props.values;
-console.log(dbData);
-
-
-
+  
+  const dbData = props.value;
+  console.log(dbData);
+  // console.log("hello");
+  // console.log(props.value);
 
   return (
     <div>
-    
-    <p>Records</p>
-    <p> {dbData}</p>
+      <p>Records</p>
+      {/* <p> {dbData.text}</p> */}
     </div>
-  )
+  );
 }
 
-export default Records
+export default Records;

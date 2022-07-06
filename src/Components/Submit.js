@@ -10,7 +10,7 @@ function Submit(props) {
   const postToDB = async () => {
     const postData = await axios.post("http://localhost:5003/data", {
       id: "IC" + Math.trunc(Math.random() * 99),
-      finalData,
+      ...finalData,
     });
   };
   

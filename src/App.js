@@ -14,9 +14,9 @@ function App() {
   const[dropdownData,setDropdowndata]=useState([]);
 
 
-  const [radioGenderFinal, setRadioGenderFinal] = useState({});
-  const [radioPersonFinal, setRadioPersonFinal] = useState({});
-  const [checkboxFinal, setCheckboxFinal] = useState({});
+  const [radioGenderFinal, setRadioGenderFinal] = useState([]);
+  const [radioPersonFinal, setRadioPersonFinal] = useState([]);
+  const [checkboxFinal, setCheckboxFinal] = useState([]);
   // console.log(radioGenderFinal)
   // console.log(radioPersonFinal)
   // console.log(checkboxFinal)
@@ -42,15 +42,15 @@ function App() {
 
   
 
-  let [date, setDate] = useState("");
+  let [date, setDate] = useState([]);
   const dat = (dat) => {
     setDate(dat);
   };
-  let [text, setText] = useState("");
+  let [text, setText] = useState([]);
   const txt = (enteredText) => {
     setText(enteredText);
   };
-  let data = { date, text ,dropdownData,radioGenderFinal,radioPersonFinal,checkboxFinal};
+  let data = [ date, text ,dropdownData,radioGenderFinal,radioPersonFinal,checkboxFinal];
   // console.log(data);
 
 const[dataFormSubmit,setDataFromSubmit]=useState({})  
@@ -72,6 +72,7 @@ console.log(dataFormSubmit)
       <CheckBox accepCheckboxData={checkboxValueAccept} />
       <Dropdown setDdToApp={ddToApp} />
       <Submit values={data}  acceptDataFromSub={acceptDataFromSub}/>
+      <Records value={data.id}/>
   
   
     </div>
