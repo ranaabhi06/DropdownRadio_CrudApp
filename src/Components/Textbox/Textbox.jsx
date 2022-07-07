@@ -12,26 +12,31 @@ props.text(textbox);
 
     return (
         <>
+        <div style={{backgroundColor:"#eee", marginLeft:"20rem",marginTop:"1rem", paddingLeft:"10rem", paddingTop:"1rem", marginRight:"20rem"}}>
         <form>
-            <table>
+        <h3 style={{color:"Red",marginLeft:"7rem"}}>Registration Form</h3>
+            <table >
+                
                 <tr>
                     <td>
-                        <label htmlFor="name">Name</label>
+                        <label htmlFor="name" style={{fontWeight:"bold" }}>Name</label>
                     </td>
                     <td>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" value={textbox.name} onChange={e => {onInputChange(e)}}/>
+                        <input required style={{marginLeft:"3rem"}} type="text" id="name" name="name" placeholder="Enter your full name" value={textbox.name} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label htmlFor="companyName"> Organisation</label>
+                        <label htmlFor="companyName" style={{fontWeight:"bold" }}> Organisation</label>
                     </td>
                     <td>
-                        <input type="text" id="companyName" name="companyName" placeholder="Enter your company name" value={textbox.companyName} onChange={e => {onInputChange(e)}}/>
+                        <input type="text" style={{marginLeft:"3rem"}} id="companyName" name="companyName" placeholder="Enter your company name" value={textbox.companyName} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
             </table>
         </form>
+
+        </div>
         </>
     );
 }

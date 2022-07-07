@@ -11,26 +11,29 @@ const onInputChange = e => {
 props.det(datepicker);
     return (
         <>
+        <div style={{backgroundColor:"#eee", marginLeft:"20rem",paddingLeft:"10rem", marginRight:"20rem"}}>
         <form>
             <table>
                 <tr>
                     <td>
-                        <label htmlFor="dob">Date of Birth</label>
+                        <label htmlFor="dob" style={{fontWeight:"bold",tabSize:"4" }}>Date of Birth</label>
                     </td>
                     <td>
-                        <input type="date" name="dob" id="dob" value={datepicker.dob}  onChange={e => {onInputChange(e)}}/>
+                        <input style={{marginLeft:"2rem"}} type="date" name="dob" id="dob" value={datepicker.dob}  onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label htmlFor="doj">Date of Joining</label>
+                        <label htmlFor="doj" style={{fontWeight:"bold" }}>Date of Joining</label>
                     </td>
                     <td>
-                        <input type="date" name="doj" value={datepicker.doj} onChange={e => {onInputChange(e)}}/>
+                        <input style={{marginLeft:"2rem"}} type="date" name="doj" value={datepicker.doj} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
             </table>
         </form>
+
+        </div>
         </>
     );
 }

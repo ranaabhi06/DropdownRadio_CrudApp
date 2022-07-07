@@ -30,7 +30,7 @@ const CheckBox = (props) => {
 //   console.log(finalCheckboxValue)
 
   return (
-    <div>
+    <div style={{backgroundColor:"#eee", marginLeft:"20rem",paddingLeft:"10rem", marginRight:"20rem"}}>
       <form action="">
         <table>
           <tr>

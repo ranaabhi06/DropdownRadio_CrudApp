@@ -1,34 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import axios from "axios";
-import Records from "./Records/Records";
+// import Records from "./Records/Records";
 
 function Submit(props) {
+  // const [finalData,setFinalData] =useState()
   const finalData = props.values;
-
-  const [toRecord, setToRecord] = useState({});
-
   const postToDB = async () => {
-    const postData = await axios.post("http://localhost:5003/data", {
-      id: "IC" + Math.trunc(Math.random() * 99),
-      finalData,
-    });
+    const postData = await axios.post("http://localhost:5003/data", { finalData});
+    props.refresh();
   };
-  
-  
 
   const saveHandler = (e) => {
     e.preventDefault();
-    
+    // setToRecord(finalData);
+
+    console.log(finalData);
     postToDB();
-    props.acceptDataFromSub(toRecord);
+    props.values=[]
+    // console.log(props.acceptDataFromSub(finalData))
   };
   // console.log(toRecord)
   return (
     <>
       <form>
-        <button type="submit" onClick={(e) => saveHandler(e)}>
+        <button
+          style={{
+            margin: "1rem 0rem 0rem 40rem",
+            padding: "5px",
+            marginRight: "20rem",
+          }}
+          type="submit"
+          onClick={(e) => saveHandler(e)}
+        >
           Save
         </button>
+        <p>{finalData.name}</p>
+        {/* <Records /> */}
       </form>
     </>
   );

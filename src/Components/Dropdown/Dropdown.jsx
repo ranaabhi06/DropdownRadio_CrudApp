@@ -91,23 +91,9 @@ function Dropdown(props) {
   };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <form>
-      <div>
+      <div style={{backgroundColor:"#eee", marginLeft:"20rem",paddingLeft:"10rem", marginRight:"20rem"}}>
         <table>
           <tr>
             <td>
