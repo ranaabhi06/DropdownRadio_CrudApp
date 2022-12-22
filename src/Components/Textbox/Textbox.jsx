@@ -19,6 +19,7 @@ props.text(textbox);
                         <label htmlFor="name">Name</label>
                     </td>
                     <td>
+                    
                         <input type="text" id="name" name="name" placeholder="Enter your full name" value={textbox.name} onChange={e => {onInputChange(e)}}/>
                     </td>
                 </tr>
